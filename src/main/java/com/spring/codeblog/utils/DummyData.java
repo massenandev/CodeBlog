@@ -18,7 +18,7 @@ public class DummyData {
 	@Autowired
 	CodeBlogRepository codeBlogRepository;
 	
-	@PostConstruct
+//	@PostConstruct
 	public void savePosts() {
 		
 		List<Post> postList = new ArrayList<>();
@@ -31,7 +31,7 @@ public class DummyData {
 		Post post2 = new Post();
 		post2.setAutor("Michelli Brito");
 		post2.setData(LocalDate.now());
-		post2.setTitulo("Docker");
+		post2.setTitulo("API Rest");
 		post2.setTexto("Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.");
 	
 		postList.add(post1);
